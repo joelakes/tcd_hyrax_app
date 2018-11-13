@@ -6,8 +6,3 @@ require_relative 'config/application'
 Rails.application.load_tasks
 
 require 'solr_wrapper/rake_task' unless Rails.env.production?
-
-# jlakes. Added this to try to get rake ci to work
-require 'rspec/core/rake_task'
-task :default => :spec
-RSpec::Core::RakeTask.new
