@@ -32,4 +32,5 @@ services:
 before_script:
   - jdk_switcher use oraclejdk8
   
-script: bundle exec rails ci
+script: 
+  - bundle exec rails ci
