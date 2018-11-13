@@ -7,7 +7,7 @@ unless Rails.env.production?
     with_server 'test' do
       Rake::Task['db:create'].invoke
       Rake::Task['db:migrate'].invoke
-      Rake::Task['spec'].invoke
+      Rake::Task['ci'].invoke
     end
   end
 end
