@@ -29,7 +29,6 @@ env:
 
 services:
   - redis-server
-  - bundle exec rake hydra:test_server
 
 before_script:
   - jdk_switcher use oraclejdk8
