@@ -32,3 +32,4 @@ services:
 
 before_script:
   - jdk_switcher use oraclejdk8
+  - bundle exec rake ci
