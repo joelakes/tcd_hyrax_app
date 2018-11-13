@@ -31,4 +31,6 @@ services:
   - redis-server
 before_script:
   - jdk_switcher use oraclejdk8
-  
+
+script:
+  - xvfb-run -a bundle exec rake ci
