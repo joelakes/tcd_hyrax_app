@@ -32,4 +32,4 @@ services:
 
 before_script:
   - jdk_switcher use oraclejdk8
-  - rake hydra:test_server
+  - bundle exec rake hydra:test_server
